@@ -1,11 +1,5 @@
-/*
-** EPITECH PROJECT, 2024
-** plazza
-** File description:
-** SafeQueue
-*/
-
-#include "SafeQueue.hpp"
+#ifndef SAFEQUEUE_TPP
+    #define SAFEQUEUE_TPP
 
 template <typename T>
 thread::SafeQueue<T>::SafeQueue()
@@ -48,6 +42,4 @@ bool thread::SafeQueue<T>::empty(void)
     return _queue.empty();
 }
 
-#include <functional>
-#include "Promise.hpp"
-template class thread::SafeQueue<std::pair<std::function<int()>, thread::Promise<int>>>;
+#endif /* !SAFEQUEUE_TPP */

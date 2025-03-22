@@ -29,4 +29,6 @@ namespace thread {
     };
 }
 
+#include "Promise.tpp"
+
 #endif /* !PROMISE_HPP_ */

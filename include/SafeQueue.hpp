@@ -34,8 +34,6 @@ namespace thread {
     };
 }
 
-template class thread::SafeQueue<int>;
-template class thread::SafeQueue<std::function<void()>>;
-
+#include "SafeQueue.tpp"
 
 #endif /* !SAFEQUEUE_HPP_ */

@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2024
-** plazza
-** File description:
-** Mutex
-*/
-
 #include "Mutex.hpp"
 
 thread::Mutex::Mutex() :

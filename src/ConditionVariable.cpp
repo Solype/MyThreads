@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2024
-** plazza
-** File description:
-** ConditionVariable
-*/
-
 #include "ConditionVariable.hpp"
 
 thread::ConditionVariable::ConditionVariable()

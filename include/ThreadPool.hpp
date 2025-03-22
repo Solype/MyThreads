@@ -20,6 +20,12 @@
     #include <vector>
 
 namespace thread {
+    /**
+     * @file ThreadPool.hpp
+     * @brief ThreadPool
+     * @details This class is a thread pool, templated on the task type and the result type
+     * for example ThreadPool<std::function<int(int)>, int>
+     */
     template <typename Task, typename Result>
     class ThreadPool {
 
@@ -82,5 +88,7 @@ namespace thread {
             };
     };
 }
+
+#include "ThreadPool.tpp"
 
 #endif /* !THREADPOOL_HPP_ */

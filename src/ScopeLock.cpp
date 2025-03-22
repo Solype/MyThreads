@@ -1,10 +1,3 @@
-/*
-** EPITECH PROJECT, 2024
-** plazza
-** File description:
-** ScopeLock
-*/
-
 #include "ScopeLock.hpp"
 
 thread::ScopeLock::ScopeLock(Mutex &mutex) :

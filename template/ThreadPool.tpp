@@ -1,11 +1,5 @@
-/*
-** EPITECH PROJECT, 2024
-** plazza
-** File description:
-** ThreadPool
-*/
-
-#include "ThreadPool.hpp"
+#ifndef THREADPOOL_TPP
+    #define THREADPOOL_TPP
 
 template <typename Task, typename Result>
 thread::ThreadPool<Task, Result>::ThreadPool(size_t maxThreads) :
@@ -148,8 +142,4 @@ void thread::ThreadPool<Task, Result>::Worker::operator()()
     }
 }
 
-#include <functional>
-#include "Matrix.hpp"
-template class thread::ThreadPool<std::function<Matrix(void)>, Matrix>;
-template thread::Promise<Matrix> thread::ThreadPool<std::function<Matrix(void)>, Matrix>::addTask<std::function<Matrix()>>(std::function<Matrix()>);
-template thread::Promise<Matrix> thread::ThreadPool<std::function<Matrix(void)>, Matrix>::addTask<Matrix (*)()>(Matrix (*)());
+#endif /* !THREADPOOL_TPP */

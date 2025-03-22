@@ -1,14 +1,8 @@
-/*
-** EPITECH PROJECT, 2024
-** &test
-** File description:
-** Promise
-*/
+#ifndef PROMISE_TPP
+    #define PROMISE_TPP
 
-#include "Promise.hpp"
-#include "Mutex.hpp"
-#include <memory>
-#include <iostream>
+    #include <memory>
+    #include <iostream>
 
 template <typename T>
 thread::Promise<T>::Promise() :
@@ -44,6 +38,5 @@ bool thread::Promise<T>::isResolved()
     return this->_mutex->isLocked();
 }
 
-#include "Matrix.hpp"
 
-template class thread::Promise<Matrix>;
+#endif /* !PROMISE_TPP */
